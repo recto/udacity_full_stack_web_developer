@@ -72,13 +72,13 @@ Please refer to tournament.sql for details of schema definition.
  **matches**
 
  t_id | p_id | points
- ---- | ----
+ ---- | ---- | ----
  1 | markov.chaney@gmail.com | 1
  1 | joe.malik@gmail.com | 0
  
 **standings_1**
 
  t_id | p_id | sum
- ---- | ----
+ ---- | ---- | ----
  1 | markov.chaney@gmail.com | 1
  1 | joe.malik@gmail.com | 0

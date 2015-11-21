@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>New Category</h1>
+	<form action="#" method = 'post'>
+		<p>Name:</p>
+		<input type ='text' size='30' name='name'><>
+		<p>Description:</p>
+		<input type ='text' size='30' maxsize='250' name='description'>
+		<br />
+		<input type='submit' value='Create'>
+		<a href = "{{ url_for('show_catalog')}}"> Cancel </a>
+	</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "catalog.html" %}
+{% block content %}
+	{{ super() }}
+	<div class = 'col-md-8'>
+	<h2>{{ category.name }}</h2>
+	{% if category.description %}
+		<p>{{ category.description }}</p>
+    {% endif %}
+	<a href = "{{url_for('new_item', category_id = category.id )}}">Create New Item</a>
+	</br></br>
+
+    {% if items !=[] %}
+		{% for i in items %}
+			<p>{{i.name}}
+			{% if "username" in login_session and i.user_id == login_session["user_id"]: %}
+				[<a href='{{url_for('edit_item', category_id = category.id, item_id=i.id ) }}' >Edit</a>,
+				<a href='{{url_for('delete_item', category_id = category.id, item_id=i.id ) }}' >Delete</a>]
+			{% endif %}
+			</p>
+			<p class="description">{{i.description}}</p>
+		{% endfor %}
+	{% endif %}
+	</div>
+{% endblock %}

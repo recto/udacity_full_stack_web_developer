@@ -1,0 +1,54 @@
+body            { font-family: sans-serif; background-color: #333333; }
+h1, h2, h3, h4  { color: #CCCCCC; }
+h1, h2          { font-family: 'Georgia', serif; margin: 0; }
+h2              { border-bottom: 2px solid #eee; font-size: 1.2em; }
+h3              { font-size: 1.2em; }
+
+p               { color: #CCCCCC;}
+
+a {text-decoration: none; color:#FFFFCC; font-size: .75em;}
+
+/*.pane {position:absolute; left: 10%; border: 2px solid;
+    border-radius: 25px; padding: 5px; margin: 5px; border-color: #999999; background-color: #333333; }
+.right_pane {position:absolute; left: 40%; border: 2px solid;
+    border-radius: 25px; padding: 5px; margin: 5px; border-color: #999999; background-color: #333333; }
+.header         {left:50%; text-align: center;}
+.name {width:50%;display: inline-block; float: left;}*/
+.description { padding-left: 25px; color: #7B7573}
+/*.editdeletepane{}*/
+
+.flash { background: #cee5F5; }
+
+.top-menu {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top-menu p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+.top-menu a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 16px;
+	color: #7B7573;
+	font-weight: 400;
+}
+/*.btn {
+	padding: 20px;
+	margin: 0;
+	border-color: #9FB80A;
+	border-width: 2px;
+	color: #9FB80A;;
+}
+.btn:hover {
+	border-color: #9FB80A;
+}
+.btn.delete {
+	border-color: #aaaaaa;
+	color: #aaaaaa;
+}
+.btn.delete:hover {
+	border-color: #aaaaaa;
+	color: red;
+}*/

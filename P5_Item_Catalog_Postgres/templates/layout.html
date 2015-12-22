@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+		{% block script %}
+		{% endblock %}
+	</head>
+	<body>
+		<div class="container">
+			<div class="row top-menu">
+				<div class="col-md-4"><a href="{{url_for('show_catalog')}}"><h1>Catalog</h1></a></div>
+				<div class="col-md-8 text-right">
+					{% if "username" not in login_session %}
+						<a href="{{url_for('show_login')}}">login</a>
+					{% else %}
+						<a href="{{url_for('gdisconnect')}}">logout</a>
+					{% endif %}
+				</div>
+			</div>
+			<div class = 'flash'>
+				{% with messages = get_flashed_messages() %}
+		    		{% if messages %}
+				    	<ul>
+				        {% for message in messages %}
+				            <li> <strong> {{ message }} </strong> </li>
+				        {% endfor %}
+				        </ul>
+			        {% endif %}
+		    	{% endwith %}
+			</div>
+			<div class="row">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>

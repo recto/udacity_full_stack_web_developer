@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block script %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="//apis.google.com/js/platform.js?onload=start"></script>
+{% endblock %}
+<div class="row top-menu">
+	<div class="col-md-6">
+		<a href="{{url_for('show_catalog')}}">Show Catalog</a>
+	</div>
+	<div class="col-md-6 text-right">
+		<a href="{{url_for('gconnect')}}">login</a>
+	</div>
+</div>

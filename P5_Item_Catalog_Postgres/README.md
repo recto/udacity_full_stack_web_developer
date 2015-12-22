@@ -2,6 +2,7 @@
 ## Linux Server information
 * IP Address : 52.35.141.132
 * URL : http://ec2-52-35-141-132.us-west-2.compute.amazonaws.com
+
 ## Summary of software installed and configuration changes made
 * Installed apache2, mod_wsgi, postgresql, ntp, git, pip, setuptools, sqlalchemy, Flask, python-psycopg2.
 * Modified configuration: Timezone is set to UTC. NTP is enabled, Created a new user grader and added "grader" to sudoers, Enabled outgoing ports and disabled incoming ports except ssh/www/ntp/2200.
@@ -12,12 +13,14 @@
 * Created item_catalog database on PostgreSQL server. Created a user, catalog, who can access only item_catalog database. Password for catalog user is 'udacity'.
 * Executed database_setup.py and populate_catalog.py to create table/some seed database for Item Catalog App.
 * Made Item Catalog App work with Apache2 + mod_wsgi.
+
 ## Item Catalog App (/var/www/catalog)
 * application.py - Web Application.
 * database_setup.py - a script to define database schema.
 * populate_catalog.py - a script to populate catalog data.
 * client_secrets.json - client secrets JSON file for OAuth2.
 * settings.py - database connection setting.
+
 ## List of Third-Party Resources
 * [Time Synchronisation with NTP](https://help.ubuntu.com/lts/serverguide/NTP.html)
 * [Create a user, who can access only the specific database.](http://dba.stackexchange.com/questions/17790/created-user-can-access-all-databases-in-postgresql-without-any-grants)
@@ -28,6 +31,7 @@
 * [mod_wsgi debugging techniques](https://code.google.com/p/modwsgi/wiki/DebuggingTechniques)
 * [Flask debug mode](http://flask.pocoo.org/docs/0.10/quickstart/#debug-mode)
 * [Flask API](http://flask.pocoo.org/docs/0.10/api/) : This is used to address the issue with global functions used by templates.
+
 ## ~/.ssh/udacity_key.rsa
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpQIBAAKCAQEAxU23ANPIW0n9EgMbHdkFCYXKP7X3l6I8cPlmuVEtmnZpJIXz

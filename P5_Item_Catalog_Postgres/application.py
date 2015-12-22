@@ -16,6 +16,8 @@ from flask import make_response
 import requests
 
 app = Flask(__name__)
+#app.debug = True
+app.secret_key = 'super_secret_key'
 
 CLIENT_ID = json.loads(open("client_secrets.json", "r").read())["web"]["client_id"]
 APPLICATION_NAME = "Item Catalog"
@@ -453,6 +455,7 @@ def get_latest_items():
     items = session.query(Item).order_by(desc(Item.date)).limit(20).all()
     return items
 
+@app.template_global()
 def get_category(categories, category_id):
     """
     Get Category for the given category ID.

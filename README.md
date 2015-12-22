@@ -7,3 +7,4 @@ the project directory for details.
 * P2 Tournament Results - P2_Tournament_Results
 * P3 Item Catalog - P3_Item_Catalog
 * P4 Conference Central - P4_Conference_Central
+* P5 Linux Server Configuration - P5_Item_Catalog_Postgres

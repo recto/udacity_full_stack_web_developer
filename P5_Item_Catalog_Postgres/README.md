@@ -13,6 +13,7 @@
 * Created item_catalog database on PostgreSQL server. Created a user, catalog, who can access only item_catalog database. Password for catalog user is 'udacity'.
 * Executed database_setup.py and populate_catalog.py to create table/some seed database for Item Catalog App.
 * Made Item Catalog App work with Apache2 + mod_wsgi.
+* Installed unattended-upgrades and set up the weekly cron job, apt-security-updates.
 
 ## Item Catalog App (/var/www/catalog)
 * application.py - Web Application.
@@ -31,6 +32,7 @@
 * [mod_wsgi debugging techniques](https://code.google.com/p/modwsgi/wiki/DebuggingTechniques)
 * [Flask debug mode](http://flask.pocoo.org/docs/0.10/quickstart/#debug-mode)
 * [Flask API](http://flask.pocoo.org/docs/0.10/api/) : This is used to address the issue with global functions used by templates.
+* [AutomaticSecurityUpdates](https://help.ubuntu.com/community/AutomaticSecurityUpdates)
 
 ## ~/.ssh/udacity_key.rsa
 -----BEGIN RSA PRIVATE KEY-----

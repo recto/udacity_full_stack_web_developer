@@ -8,3 +8,5 @@ the project directory for details.
 * P3 Item Catalog - P3_Item_Catalog
 * P4 Conference Central - P4_Conference_Central
 * P5 Linux Server Configuration - P5_Item_Catalog_Postgres
+* Full Stack Interview Dry-Run - Full_Stack_Interview_Dry-Run
+  (Please have a look at full_stack_interview_dry-run.md.)
